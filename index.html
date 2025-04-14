@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Outfit", sans-serif;
+        background-color: #114ae4;
+        color: #000;
+      }
+      header.hero {
+        background: #f4f4f4;
+        padding: 2rem;
+        text-align: center;
+      }
+      header.hero img.logo {
+        max-width: 200px;
+        margin-bottom: 1rem;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        color: #333;
+      }
+      .tags span {
+        background-color: #eee;
+        padding: 0.3rem 0.6rem;
+        border-radius: 12px;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        background-color: #000;
+        position: relative;
+      }
+      nav a,
+      .dropbtn {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        background: none;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        z-index: 1;
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
+      .dropdown-content a {
+        color: #000;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .about-us {
+        background: #ffffff;
+        padding: 3rem 2rem;
+        border-radius: 1rem;
+        margin: 2rem auto;
+        max-width: 1200px;
+        text-align: center;
+      }
+      .team-members {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+      .member {
+        background: #f2f2f2;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 250px;
+      }
+      .member img {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+      .member h3 {
+        color: #114ae4;
+      }
+      .why-us {
+        background: #ffffff;
+        padding: 3rem 2rem;
+        border-radius: 1rem;
+        margin: 2rem auto;
+        max-width: 1200px;
+        text-align: center;
+      }
+      .why-us h2 {
+        color: #114ae4;
+      }
+      .why-us-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+      .why-card {
+        background: #f2f2f2;
+        padding: 1.5rem;
+        border-radius: 1rem;
+      }
+      .contact-invite-section {
+        background: #ffffff;
+        color: #000;
+        margin: 2rem auto;
+        padding: 2rem;
+        border-radius: 1rem;
+        max-width: 900px;
+        text-align: center;
+      }
+      footer {
+        background: #000;
+        color: white;
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
+      }
+      .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        gap: 2rem;
+      }
+      .footer-left,
+      .footer-right {
+        flex: 1 1 300px;
+      }
+      .footer-logo {
+        width: 120px;
+        margin-bottom: 1rem;
+      }
+      .footer-right a {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+      .footer-bottom {
+        text-align: center;
+        border-top: 1px solid #444;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <img src="images/Logo.jpeg" alt="Portfolio Logo" class="logo" />
+      <div class="tags">
+        <span>#Branding</span><span>#Logo</span><span>#Social_Media</span> <span>#Poster</span><span>#Packaging</span><span>#Illustration</span> <span>#3D_&_Motion_Graphic</span><span>2025</span>
+      </div>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Projects</button>
+        <div class="dropdown-content">
+          <a href="asma.html">Asma</a>
+          <a href="peter.html">Peter</a>
+          <a href="karan.html">Karan</a>
+          <a href="manjima.html">Manjima</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="about-us">
+      <h2>About Us</h2>
+      <div class="team-members">
+        <a href="asma.html" class="member">
+          <img src="images/Asma.png" alt="Asma" />
+          <h3>Asma – Painter</h3>
+          <p>Visual storyteller through expressive brushwork.</p>
+        </a>
+
+        <a href="peter.html" class="member">
+          <img src="images/peter.jpeg" alt="Peter" />
+          <h3>Peter – Architect</h3>
+          <p>Designs spaces that inspire and endure.</p>
+        </a>
+
+        <a href="karan.html" class="member">
+          <img src="images/karan.jpeg" alt="Karan" />
+          <h3>Karan – UX/UI Designer</h3>
+          <p>Crafts digital journeys with purpose and clarity.</p>
+        </a>
+
+        <a href="manjima.html" class="member">
+          <img src="images/manjima.jpeg" alt="Manjima" />
+          <h3>Manjima – Content Designer</h3>
+          <p>Brings brand voice to life through impactful writing.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="why-us">
+      <h2>Why Us</h2>
+      <div class="why-us-grid">
+        <div class="why-card">
+          <h3>A Team of Seasoned Professionals</h3>
+          <p>Combining diverse skills and deep industry knowledge for impactful results.</p>
+        </div>
+        <div class="why-card">
+          <h3>Mastery Across Platforms</h3>
+          <p>From design to code, we create seamless, tailored experiences.</p>
+        </div>
+        <div class="why-card">
+          <h3>Dependable Project Delivery</h3>
+          <p>Timely, consistent, and high-quality every step of the way.</p>
+        </div>
+        <div class="why-card">
+          <h3>Built to Scale</h3>
+          <p>Solutions that evolve as your needs do.</p>
+        </div>
+        <div class="why-card">
+          <h3>Open, Clear Communication</h3>
+          <p>Honest feedback and clear updates at all stages.</p>
+        </div>
+        <div class="why-card">
+          <h3>Future-Ready Solutions</h3>
+          <p>We embrace new tools and trends to stay ahead of the curve.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-invite-section">
+      <h2>Wanna work with us?</h2>
+      <p>Mail us at <a href="mailto:designer@mail.com">designer@mail.com</a></p>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <img src="images/Logo.jpeg" alt="Portfolio Logo" class="footer-logo" />
+          <p>We are a creative team of four – uniting design, structure, storytelling, and interaction to build digital experiences that speak louder than words.</p>
+        </div>
+        <div class="footer-right">
+          <h3>Contact Us</h3>
+          <p>Email: <a href="mailto:designer@mail.com">designer@mail.com</a></p>
+          <p>Phone: +1 234 567 8901</p>
+          <p>LinkedIn: <a href="#">@OurTeamDesign</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Our Team — Crafted with passion.</p>
+      </div>
+    </footer>
+  </body>
+</html>

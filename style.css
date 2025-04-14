@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: #114ae4;
+    color: #000;
+  }
+  
+  /* HEADER */
+  header.hero {
+    background: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+  }
+  header.hero img.logo {
+    max-width: 200px;
+    margin-bottom: 1rem;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  .tags span {
+    background-color: #eee;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+  }
+  
+  /* NAVIGATION */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #000;
+    position: relative;
+  }
+  nav a, .dropbtn {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* ABOUT US SECTION */
+  .about-us {
+    background: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    text-align: center;
+  }
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .member {
+    background: #f2f2f2;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 250px;
+  }
+  .member img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  .member h3 {
+    color: #114ae4;
+  }
+
+  .member {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+  }
+  .member:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  /* WHY US SECTION */
+  .why-us {
+    background: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    text-align: center;
+  }
+  .why-us h2 {
+    color: #114ae4;
+  }
+  .why-us-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .why-card {
+    background: #f2f2f2;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 250px;
+  }
+  
+  /* CONTACT INVITE SECTION */
+  .contact-invite-section {
+    background: #ffffff;
+    color: #000;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 900px;
+    text-align: center;
+  }
+  .contact-invite-section a {
+    color: #114ae4;
+    text-decoration: underline;
+  }
+  
+  /* FOOTER */
+  footer {
+    background: #000;
+    color: white;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+  }
+  .footer-left,
+  .footer-right {
+    flex: 1 1 300px;
+  }
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 1rem;
+  }
+  .footer-right a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+  }
+  
